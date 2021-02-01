@@ -14,7 +14,8 @@ int BinarytoDecimal() {
 		n = n / 10;
 		dec += rem * pow(2, i);
 		i++;
-	}	while ( n != 0);
+	}	
+	while ( n != 0);
 	printf("%d in binary = %d in decimal\n", x, dec);
 	return 0;
 }
@@ -25,11 +26,12 @@ int DecimaltoBinary() {
 	scanf("%d", &user);
 	x = user;
 	while (x > 0) {
-	rem = x % 2;
-	binary += rem * temp;
-	temp = temp * 10;
-	x = x / 2;
-	} printf("%d in decimal = %d in binary\n", user, binary);
+		rem = x % 2;	// Divide the user input by 2 and store the remainder
+		binary += rem * temp;
+		temp = temp * 10;
+		x = x / 2;
+	} 
+	printf("%d in decimal = %d in binary\n", user, binary);
 	return 0;
 }
 
