@@ -2,7 +2,7 @@
 
 
 ## Things to code 
-	* Binary to decimal conversion
+	* Binary to decimal conversion //DONE
 	* Decimal to binary conversion
 	* Decimal to octal conversion
 	* Octal to decimal conversion
