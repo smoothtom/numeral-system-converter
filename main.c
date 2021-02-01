@@ -37,18 +37,32 @@ int DecimaltoBinary() {
 
 int DecimaltoOctal() {
 	int octal = 0, temp = 1, user, x;
-	printf("Please enter a decial number: ");
+	printf("Please enter a Decial number: ");
 	scanf("%d", &user);
 	x = user;
 	while ( user != 0) {
 		octal = octal + (user % 8) * temp;
-		user = user / 8;
+		user = user / 8; 
 		temp = temp * 10;
 	}
 	printf("%d in Decimal = %d in octal\n", x, octal);
 	return 0;
 }
 
+int OctaltoDecimal() {
+	int dec = 0, temp = 0, user, x;
+	printf("Please enter a Octal number: ");
+	scanf("%d", &user);
+	x = user; // just a copy of the user input
+	while ( user != 0) {
+		dec = dec + (user % 10) * pow(8, temp);
+		temp++;
+		user = user / 10;
+	}
+	printf("%d in Octal = %d in Decimal\n", x, dec);
+	return 0;
+}
+
 int main() {
-	DecimaltoOctal();
+	OctaltoDecimal();
 }
