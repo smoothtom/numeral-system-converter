@@ -9,6 +9,7 @@
 * Binary to octal conversion -> in progress
 * Octal to binary conversion
 
+* a setup function which navigate through this programm 
 
 ## About 
 * This programm is written in C
