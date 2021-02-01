@@ -2,8 +2,8 @@
 
 
 ## Things to code 
-* Binary to decimal conversion //DONE
-* Decimal to binary conversion
+* Binary to decimal conversion -> DONE ( fix the first zero problem )
+* Decimal to binary conversion -> DONE 
 * Decimal to octal conversion
 * Octal to decimal conversion
 * Binary to octal conversion
