@@ -63,6 +63,22 @@ int OctaltoDecimal() {
 	return 0;
 }
 
+int BinarytoOctal() {
+  long long user;  
+  int temp = 1, octal = 0, rem, x;
+  printf("Please enter a Binary Number: "); 
+  scanf("%lld", &user);
+  x = user;
+  while (user != 0) {
+    rem = user % 10;
+    octal = octal + rem * temp;
+    temp = temp * 2;
+    user = user / 10;
+  }
+  printf("%d in Binary = %d in Octal\n", x, octal);
+  return 0;
+}
+
 int main() {
-	OctaltoDecimal();
+	BinarytoOctal();
 }
