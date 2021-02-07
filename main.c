@@ -121,5 +121,15 @@ int OctaltoBinary() {
  return 0;
 }
 
+void intro() {
+// --------------------------------------------
+// Numeral System Converter - Command Line Tool
+// --------------------------------------------
+// * 1. Binary to Decimal 
+// ..
+// ..
+// Choose one of the system converter: 
+}
+
 int main() {
 }
