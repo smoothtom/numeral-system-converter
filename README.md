@@ -6,8 +6,8 @@
 * Decimal to binary conversion -> DONE 
 * Decimal to octal conversion -> DONE 
 * Octal to decimal conversion -> DONE
-* Binary to octal conversion -> in progress
-* Octal to binary conversion
+* Binary to octal conversion ->  DONE
+* Octal to binary conversion -> in porgress :)
 
 * a setup function which navigate through this programm 
 
