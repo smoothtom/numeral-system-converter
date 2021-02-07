@@ -10,10 +10,10 @@ int BinarytoDecimal() {
 	x = n;
 	int dec = 0, i = 0, rem;
 	do {
-		rem =  n % 10;
-		n = n / 10;
-		dec += rem * pow(2, i);
-		i++;
+  rem =  n % 10;
+  n = n / 10;
+  dec += rem * pow(2, i);
+  i++;
 	}	
 	while ( n != 0);
 	printf("%d in Binary = %d in Decimal\n", x, dec);
@@ -27,10 +27,10 @@ int DecimaltoBinary() {
 	scanf("%d", &user);
 	x = user;
 	while (x > 0) {
-		rem = x % 2;	// Divide the user input by 2 and store the remainder
-		binary += rem * temp;
-		temp = temp * 10;
-		x = x / 2;
+  rem = x % 2;	// Divide the user input by 2 and store the remainder
+  binary += rem * temp;
+  temp = temp * 10;
+  x = x / 2;
 	} 
 	printf("%d in Decimal = %d in Binary\n", user, binary);
 	return 0;
@@ -43,9 +43,9 @@ int DecimaltoOctal() {
 	scanf("%d", &user);
 	x = user;
 	while ( user != 0) {
-		octal = octal + (user % 8) * temp;
-		user = user / 8; 
-		temp = temp * 10;
+  octal = octal + (user % 8) * temp;
+  user = user / 8; 
+  temp = temp * 10;
 	}
 	printf("%d in Decimal = %d in octal\n", x, octal);
 	return 0;
@@ -58,9 +58,9 @@ int OctaltoDecimal() {
 	scanf("%d", &user);
 	x = user; // just a copy of the user input
 	while ( user != 0) {
-		dec = dec + (user % 10) * pow(8, temp);
-		temp++;
-		user = user / 10;
+  dec = dec + (user % 10) * pow(8, temp);
+  temp++;
+  user = user / 10;
 	}
 	printf("%d in Octal = %d in Decimal\n", x, dec);
 	return 0;
@@ -94,6 +94,7 @@ int BinarytoOctal() {
   return 0;
 }
 
+// Adding the function to convert Octal to Binary 
 int OctaltoBinary() {
   int oct,x;
   printf("Please enter a Octal number: ");
