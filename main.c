@@ -91,12 +91,33 @@ int BinarytoOctal() {
     i = i * 10;
   }
   printf("%lld in Binary = %d in Octal\n", user, oct);
+  return 0;
 }
 
 int OctaltoBinary() {
+  int oct,x;
+  printf("Please enter a Octal number: ");
+  scanf("%d", &oct);
+  x = oct;
+  int dec = 0, i = 0;
+  long long bin = 0;
 
+  // first step is to convert octal to decimal
+  while (oct != 0) {
+    dec += (oct % 10) * pow(8,i);
+    i++;
+    oct = oct / 10;
+  }
+  i = 1;
+
+  // and now we will convert decimal to binary
+  while (dec != 0) {
+    bin += (dec % 2) * i;
+    dec = dec / 2;
+    i = i * 10;
+  }
+ printf("%d in Octal = %lld in Binary\n", x, bin);
 }
 
 int main() {
-  OctaltoBinary();
 }
