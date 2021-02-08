@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
 // Adding the function to convert Binary to Decimal
@@ -17,6 +18,7 @@ int BinarytoDecimal() {
   }	
   while ( n != 0);
   printf("%d in Binary = %d in Decimal\n", x, dec);
+  secondmenu();
   return 0;
 }
 
@@ -33,13 +35,14 @@ int DecimaltoBinary() {
     x = x / 2;
   } 
   printf("%d in Decimal = %d in Binary\n", user, binary);
+  secondmenu();
   return 0;
 }
 
 // Adding the function to convert Decimal to Octal
 int DecimaltoOctal() {
   int octal = 0, temp = 1, user, x;
-  printf("Please enter a Decial number: ");
+  printf("Please enter a Decimal number: ");
   scanf("%d", &user);
   x = user;
   while ( user != 0) {
@@ -48,6 +51,7 @@ int DecimaltoOctal() {
     temp = temp * 10;
   }
   printf("%d in Decimal = %d in octal\n", x, octal);
+  secondmenu();
   return 0;
 }
 
@@ -63,6 +67,7 @@ int OctaltoDecimal() {
     user = user / 10;
   }
   printf("%d in Octal = %d in Decimal\n", x, dec);
+  secondmenu();
   return 0;
 }
 
@@ -91,6 +96,7 @@ int BinarytoOctal() {
     i = i * 10;
   }
   printf("%lld in Binary = %d in Octal\n", user, oct);
+  secondmenu();
   return 0;
 }
 
@@ -118,37 +124,68 @@ int OctaltoBinary() {
     i = i * 10;
   }
  printf("%d in Octal = %lld in Binary\n", x, bin);
+ secondmenu();
  return 0;
 }
 
 void menu() {
   int user;
-// --------------------------------------------
-// Numeral System Converter - Command Line Tool
-// --------------------------------------------
-// [0] Exit
-// [1] Back to Main Menu
-// --------------------------------------------
-// [2] Binary to Decimal 
-// ..
-// ..
-// --------------------------------------------
-// Choose one of the system converter: 
-printf("--------------------------------------------\n");
-printf("Numeral System Converter - Command Line Tool\n");
-printf("--------------------------------------------\n");
-printf("[0] Exit\n");
-printf("[1] Back to Main Menu\n");
-printf("--------------------------------------------\n");
-printf("[2] Binary to Decimal\n");
-printf("[3] Decimal to Binary\n");
-printf("[4] Decimal to Octal\n");
-printf("[5] Octal to Decimal\n");
-printf("[6] Binary to Octal\n");
-printf("[7] Octal to Binary\n");
-printf("--------------------------------------------\n");
-printf("Choose one of the system Converter: ");
-scanf("%d", &user);
+  // --------------------------------------------
+  // Numeral System Converter - Command Line Tool
+  // --------------------------------------------
+  // [0] Exit
+  // [1] Back to Main Menu
+  // --------------------------------------------
+  // [2] Binary to Decimal 
+  // ..
+  // ..
+  // --------------------------------------------
+  // Choose one of the system converter: 
+  printf("--------------------------------------------\n");
+  printf("Numeral System Converter - Command Line Tool\n");
+  printf("--------------------------------------------\n");
+  printf("[0] Exit\n");
+  printf("[1] Back to Main Menu\n");
+  printf("--------------------------------------------\n");
+  printf("[2] Binary to Decimal\n");
+  printf("[3] Decimal to Binary\n");
+  printf("[4] Decimal to Octal\n");
+  printf("[5] Octal to Decimal\n");
+  printf("[6] Binary to Octal\n");
+  printf("[7] Octal to Binary\n");
+  printf("--------------------------------------------\n");
+  printf("Choose one of the system Converter: ");
+  scanf("%d", &user);
+  printf("\n");
+  if (user == 0) {
+    exit(0);
+  } else if (user == 1) {
+      menu();
+  } else if (user == 2) {
+      BinarytoDecimal();
+  } else if (user == 3) {
+      DecimaltoBinary();
+  } else if (user == 4) {
+      DecimaltoOctal();
+  } else if (user == 5) {
+      OctaltoDecimal();
+  } else if (user == 6) {
+      BinarytoOctal();
+  } else if (user == 7) {
+      OctaltoBinary();
+  }
+}
+
+int  secondmenu() {
+ int input;
+ printf("\n[0] Exit\n[1] Back to Main Menu\nPlease choose on of them: ");
+ scanf("%d", &input);
+ if (input == 0) {
+    exit(0);
+ } else if (input == 1) {
+    menu();
+ }
+ return 0;
 }
 
 int main() {
