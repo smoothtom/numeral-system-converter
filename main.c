@@ -121,15 +121,36 @@ int OctaltoBinary() {
  return 0;
 }
 
-void intro() {
+void menu() {
+  int user;
 // --------------------------------------------
 // Numeral System Converter - Command Line Tool
 // --------------------------------------------
-// * 1. Binary to Decimal 
+// [0] Exit
+// [1] Back to Main Menu
+// --------------------------------------------
+// [2] Binary to Decimal 
 // ..
 // ..
+// --------------------------------------------
 // Choose one of the system converter: 
+printf("--------------------------------------------\n");
+printf("Numeral System Converter - Command Line Tool\n");
+printf("--------------------------------------------\n");
+printf("[0] Exit\n");
+printf("[1] Back to Main Menu\n");
+printf("--------------------------------------------\n");
+printf("[2] Binary to Decimal\n");
+printf("[3] Decimal to Binary\n");
+printf("[4] Decimal to Octal\n");
+printf("[5] Octal to Decimal\n");
+printf("[6] Binary to Octal\n");
+printf("[7] Octal to Binary\n");
+printf("--------------------------------------------\n");
+printf("Choose one of the system Converter: ");
+scanf("%d", &user);
 }
 
 int main() {
+  menu();
 }
