@@ -23,7 +23,8 @@ int BinarytoDecimal() {
 
 // Adding the function to convert Decimal to Binary
 int DecimaltoBinary() {
-  int user, x, rem, binary = 0, temp = 1;
+  int user;
+  long long x, binary = 0, rem, temp = 1;
   printf("Please enter a Decimal number: ");
   scanf("%d", &user);
   x = user;
@@ -33,7 +34,7 @@ int DecimaltoBinary() {
     temp = temp * 10;
     x = x / 2;
   } 
-  printf("%d in Decimal = %d in Binary\n", user, binary);
+  printf("%d in Decimal = %lld in Binary\n", user, binary);
   secondmenu();
   return 0;
 }
