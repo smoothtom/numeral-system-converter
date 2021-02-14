@@ -73,8 +73,7 @@ int OctaltoDecimal() {
 
 // Adding the function to convert Binary to Octal
 int BinarytoOctal() {
-  long long user;
-  int bin;
+  long long user, bin;
   printf("Please enter a Binary number: ");
   scanf("%lld" , &user);
   bin = user;
