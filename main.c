@@ -4,8 +4,7 @@
 
 // Adding the function to convert Binary to Decimal
 int BinarytoDecimal() {
-  long long n; // 64 bits type 
-  int x;
+  long long n, x; // 64 bits type
   printf("Please enter a Binary number: ");
   scanf("%lld", &n);
   x = n;
@@ -17,7 +16,7 @@ int BinarytoDecimal() {
     i++;
   }	
   while ( n != 0);
-  printf("%d in Binary = %d in Decimal\n", x, dec);
+  printf("%lld in Binary = %d in Decimal\n", x, dec);
   secondmenu();
   return 0;
 }
@@ -141,7 +140,7 @@ void menu() {
   // ..
   // --------------------------------------------
   // Choose one of the system converter: 
-  printf("--------------------------------------------\n");
+  printf("\n--------------------------------------------\n");
   printf("Numeral System Converter - Command Line Tool\n");
   printf("--------------------------------------------\n");
   printf("[0] Exit\n");
@@ -176,7 +175,7 @@ void menu() {
   }
 }
 
-int  secondmenu() {
+int secondmenu() {
  int input;
  printf("\n[0] Exit\n[1] Back to Main Menu\nPlease choose on of them: ");
  scanf("%d", &input);
