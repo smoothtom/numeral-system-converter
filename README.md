@@ -18,7 +18,8 @@ Finally run the Programm
 ```
 ./main
 ```
-
+## TODO
+* Hexa to Decimal - Binary - Octal and everything to Hexa 
 
 ## Usage
 * Binary to decimal conversion  ( fix the first zero problem )
