@@ -6,18 +6,17 @@ First you will need to clone the repository
 ```
 git clone https://github.com/smoothtom/numeral-system-converter.git
 ```
+
 Change directory using cd 
 ```
 cd numeral-system-converter/
 ```
-Compile the programm with
+
+Compile and run the programm with
 ```
-gcc -o main main.c -lm
+make 
 ```
-Finally run the Programm 
-```
-./main
-```
+
 ## TODO
 * Hexa to Decimal - Binary - Octal and reversed
 
