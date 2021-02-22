@@ -5,5 +5,7 @@ all: main.c
 	gcc main.c -lm -o run 
 	./run
 
+
+# for deleting the binary file, do: make clean
 clean:
 	rm -r run
