@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <math.h>
 
+// function delcaration before main()
+int secondmenu();
+
 // Adding the function to convert Binary to Decimal
 int BinarytoDecimal() {
   long long n, x; // 64 bits type
