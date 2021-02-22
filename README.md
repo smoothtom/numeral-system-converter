@@ -18,7 +18,7 @@ make
 ```
 
 ## TODO
-* Hexa to Decimal - Binary - Octal and reversed
+* Hexa to Binary - Octal and reversed
 
 ## Usage
 * Binary to decimal conversion  ( fix the first zero problem )
@@ -27,8 +27,9 @@ make
 * Octal to decimal conversion
 * Binary to octal conversion 
 * Octal to binary conversion 
+* Hexadecimal to Decimal conversion
 
-* a setup function which navigate through this programm -> in progress
+* a setup function which navigate through this programm 
 
 ## About 
 This programm is written in C
