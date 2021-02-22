@@ -158,6 +158,7 @@ int HexadecimaltoDecimal() {
     cnt ++;
   }
   printf("%s in Hexadecimal = %d in Decimal\n", hex,dec);
+  secondmenu();
   return 0;
 }
 
