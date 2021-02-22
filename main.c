@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <string.h>
 
 // function delcaration before main()
 int secondmenu();
@@ -128,6 +129,38 @@ int OctaltoBinary() {
  return 0;
 }
 
+// Adding the function to convert Hexadecimal to Decimal
+int HexadecimaltoDecimal() {
+  char hex[32] = {0};
+  int dec = 0, cnt = 0, i, dig;
+
+  printf("Please enter a Hexadecimal number: ");
+  scanf("%s", hex);
+
+  for (i = (strlen(hex) - 1); i >= 0; i--) {
+    switch(hex[i]) {
+      case 'A':
+        dig = 10; break;
+      case 'B':
+        dig = 11; break;
+      case 'C':
+        dig = 12; break;
+      case 'D':
+        dig = 13; break;
+      case 'E':
+        dig = 14; break;
+      case 'F':
+        dig = 15; break;
+      default:
+        dig = hex[i] - 0x30;
+    }
+    dec = dec + (dig)*pow((double)16,(double)cnt);
+    cnt ++;
+  }
+  printf("%s in Hexadecimal = %d in Decimal\n", hex,dec);
+  return 0;
+}
+
 void menu() {
   int user;
   // --------------------------------------------
@@ -153,6 +186,7 @@ void menu() {
   printf("[5] Octal to Decimal\n");
   printf("[6] Binary to Octal\n");
   printf("[7] Octal to Binary\n");
+  printf("[8] Hexadecimal to Decimal\n");
   printf("--------------------------------------------\n");
   printf("Choose one of the system Converter: ");
   scanf("%d", &user);
@@ -173,6 +207,8 @@ void menu() {
       BinarytoOctal();
   } else if (user == 7) {
       OctaltoBinary();
+  } else if (user == 8) {
+      HexadecimaltoDecimal();
   }
 }
 
