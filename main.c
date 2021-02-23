@@ -162,6 +162,10 @@ int HexadecimaltoDecimal() {
   return 0;
 }
 
+int HexadecimaltoOctal() {
+
+}
+
 void menu() {
   int user;
   // --------------------------------------------
@@ -183,11 +187,12 @@ void menu() {
   printf("--------------------------------------------\n");
   printf("[2] Binary to Decimal\n");
   printf("[3] Decimal to Binary\n");
-  printf("[4] Decimal to Octal\n");
-  printf("[5] Octal to Decimal\n");
-  printf("[6] Binary to Octal\n");
-  printf("[7] Octal to Binary\n");
-  printf("[8] Hexadecimal to Decimal\n");
+  printf("[4] Hexadecimal to Decimal\n");
+  printf("[5] Decimal to Octal\n");
+  printf("[6] Octal to Decimal\n");
+  printf("[7] Hexadecimal to Octal\n");
+  printf("[8] Binary to Octal\n");
+  printf("[9] Octal to Binary\n");
   printf("--------------------------------------------\n");
   printf("Choose one of the system Converter: ");
   scanf("%d", &user);
@@ -201,15 +206,17 @@ void menu() {
   } else if (user == 3) {
       DecimaltoBinary();
   } else if (user == 4) {
-      DecimaltoOctal();
-  } else if (user == 5) {
-      OctaltoDecimal();
-  } else if (user == 6) {
-      BinarytoOctal();
-  } else if (user == 7) {
-      OctaltoBinary();
-  } else if (user == 8) {
       HexadecimaltoDecimal();
+  } else if (user == 5) {
+      DecimaltoOctal();
+  } else if (user == 6) {
+      OctaltoDecimal();
+  } else if (user == 7) {
+      HexadecimaltoOctal();
+  } else if (user == 8) {
+      BinarytoOctal();
+  } else if (user == 9) {
+    OctaltoBinary();
   }
 }
 
