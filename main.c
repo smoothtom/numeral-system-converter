@@ -163,12 +163,13 @@ int HexadecimaltoDecimal() {
 }
 
 int HexadecimaltoOctal() {
-	char hex[32] = {0};
+char hex[32] = {0};
 
-	printf("Please Enter a Hexadecimal number: ");
-	scanf("%d", &hex);
 
-	return 0;
+printf("Please Enter a Hexadecimal number: ");
+scanf("%d", &hex);
+
+return 0;
 }
 
 void menu() {
