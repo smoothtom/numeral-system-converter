@@ -163,7 +163,7 @@ int HexadecimaltoDecimal() {
 }
 
 int HexadecimaltoOctal() {
-  char hex[32] = {0}, c;
+  char hex[32] = {0};
   int n, i, len, dec = 0, oct = 0;
   printf("Please Enter a Hexadecimal number: ");
   scanf("%s", hex);
@@ -193,6 +193,9 @@ int HexadecimaltoOctal() {
   return 0;
 }
 
+int HexadecimaltoBinary() {
+  char hex[32] = {0};
+}
 void menu() {
   int user;
   // --------------------------------------------
