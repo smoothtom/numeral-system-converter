@@ -162,6 +162,7 @@ int HexadecimaltoDecimal() {
   return 0;
 }
 
+// Adding the function to convert Hexadecimal to Octal
 int HexadecimaltoOctal() {
   char hex[32] = {0};
   int n, i, len, dec = 0, oct = 0;
@@ -193,8 +194,58 @@ int HexadecimaltoOctal() {
   return 0;
 }
 
+// Adding the function to convert Hexadecimal to Binary
 int HexadecimaltoBinary() {
-  char hex[32] = {0};
+  char hex[32] = {0}, x;
+  long int i = 0;
+  printf("Please Enter a Hexadecimal number: ");
+  scanf("%s", hex);
+  x = hex;
+
+  while (hex[i]) {
+    
+    switch (hex[i]) {
+      case '0':
+          printf("0000"); break;
+      case '1':
+          printf("0001"); break;
+      case '2':
+          printf("0010"); break;
+      case '3':
+          printf("0011"); break;
+      case '4':
+          printf("0100"); break;
+      case '5':
+          printf("0101"); break;
+      case '6':
+          printf("0110"); break;
+      case '7':
+          printf("0111"); break;
+      case '8':
+          printf("1000"); break;
+      case '9':
+          printf("1001"); break;
+      case 'A':
+          printf("1010"); break;
+      case 'B':
+          printf("1011"); break;
+      case 'C':
+          printf("1100"); break;
+      case 'D':
+          printf("1101"); break;
+      case 'E':
+          printf("1110"); break;
+      case 'F':
+          printf("1111"); break;
+      default:
+          printf("\n Invalid Hexa digit  %d", hex[i]);
+          return 0;
+    }
+    i++;
+  }
+  printf("%s in Hexadecimal = %d in Binary\n", x,hex;
+  secondmenu();
+  return 0;
 }
 void menu() {
   int user;
@@ -223,6 +274,7 @@ void menu() {
   printf("[7] Hexadecimal to Octal\n");
   printf("[8] Binary to Octal\n");
   printf("[9] Octal to Binary\n");
+  printf("[10] Hexadecimal to Binary\n");
   printf("--------------------------------------------\n");
   printf("Choose one of the system Converter: ");
   scanf("%d", &user);
@@ -247,6 +299,8 @@ void menu() {
       BinarytoOctal();
   } else if (user == 9) {
     OctaltoBinary();
+  } else if (user == 10) {
+    HexadecimaltoBinary();
   }
 }
 
