@@ -248,7 +248,7 @@ int HexadecimaltoBinary() {
   return 0;
 }
 
-// Function for navigating through the programm
+// Function for navigate through the programm
 void menu() {
   int user;
   // --------------------------------------------
