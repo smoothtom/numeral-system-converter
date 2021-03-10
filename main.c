@@ -247,6 +247,8 @@ int HexadecimaltoBinary() {
   secondmenu();
   return 0;
 }
+
+// Function for navigating through the programm
 void menu() {
   int user;
   // --------------------------------------------
@@ -304,6 +306,7 @@ void menu() {
   }
 }
 
+// This is used in every function at the end for going back to the main menu or exit the programm
 int secondmenu() {
  int input;
  printf("\n[0] Exit\n[1] Back to Main Menu\nPlease choose on of them: ");
