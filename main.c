@@ -197,7 +197,7 @@ int HexadecimaltoOctal() {
 // Adding the function to convert Hexadecimal to Binary
 int HexadecimaltoBinary() {
   char hex[32] = {0}, x;
-  long int i = 0;
+  long long int i = 0;
   printf("Please Enter a Hexadecimal number: ");
   scanf("%s", hex);
   x = hex;
@@ -238,12 +238,12 @@ int HexadecimaltoBinary() {
       case 'F':
           printf("1111"); break;
       default:
-          printf("\n Invalid Hexa digit  %d", hex[i]);
+          printf("\n Invalid Hexa digit  %c", hex[i]);
           return 0;
     }
     i++;
   }
-  printf("%s in Hexadecimal = %d in Binary\n", x,hex;
+  printf("%s in Hexadecimal = %lld in Binary\n", x,hex);
   secondmenu();
   return 0;
 }
