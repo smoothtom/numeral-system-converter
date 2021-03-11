@@ -319,6 +319,7 @@ int secondmenu() {
  return 0;
 }
 
+// main function is required to start the programm
 int main() {
   menu();
 }
