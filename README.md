@@ -28,7 +28,8 @@ make
 * Binary to octal conversion 
 * Octal to binary conversion 
 * Hexadecimal to Decimal conversion
-* Hexadecimal to Octal conversion --> in progress
+* Hexadecimal to Octal conversion 
+* Hexadecimal to Binary --> in Progress 
 
 * a setup function which navigate through this programm 
 
