@@ -18,7 +18,7 @@ make
 ```
 
 ## TODO
-* Hexa to Binary - Octal and reversed
+* Decimal - Octal - Binary to Hexadecimal 
 
 ## Usage
 * Binary to decimal conversion  ( fix the first zero problem )
@@ -29,7 +29,8 @@ make
 * Octal to binary conversion 
 * Hexadecimal to Decimal conversion
 * Hexadecimal to Octal conversion 
-* Hexadecimal to Binary --> in Progress 
+* Hexadecimal to Binary conversion
+* Decimal to Hexedecimal --> in Progress
 
 * a setup function which navigate through this programm 
 
