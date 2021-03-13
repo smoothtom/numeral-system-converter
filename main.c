@@ -1,3 +1,6 @@
+// the function above is required to start the whole programm und and contains the menu function
+// which comes with the a pre selected menu, where you can selected 9 different types of conver-
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -196,12 +199,13 @@ int HexadecimaltoOctal() {
 
 // Adding the function to convert Hexadecimal to Binary
 int HexadecimaltoBinary() {
-  char hex[32] = {0}, x;
+  char hex[32] = {0};
   long long int i = 0;
   printf("Please Enter a Hexadecimal number: ");
   scanf("%s", hex);
-  x = hex;
-
+  
+  // first part of the printf function - then go to the while loop 
+  printf("%s in Hexadecimal = ", hex);
   while (hex[i]) {
     
     switch (hex[i]) {
@@ -242,8 +246,9 @@ int HexadecimaltoBinary() {
           return 0;
     }
     i++;
-  }
-  printf("%s in Hexadecimal = %lld in Binary\n", x,hex);
+  } 
+  // and here's the second part of the printf function
+  printf(" in Binary");
   secondmenu();
   return 0;
 }
@@ -323,3 +328,4 @@ int secondmenu() {
 int main() {
   menu();
 }
+
