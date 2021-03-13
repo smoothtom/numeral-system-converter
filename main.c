@@ -1,6 +1,3 @@
-// the function above is required to start the whole programm und and contains the menu function
-// which comes with the a pre selected menu, where you can selected 9 different types of conver-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -253,6 +250,10 @@ int HexadecimaltoBinary() {
   return 0;
 }
 
+int DecimaltoHexadecimal() {
+
+}
+
 // Function to navigate through the programm
 void menu() {
   int user;
@@ -282,6 +283,7 @@ void menu() {
   printf("[8] Binary to Octal\n");
   printf("[9] Octal to Binary\n");
   printf("[10] Hexadecimal to Binary\n");
+  printf("[11] Decimal to Hexadecimal\n");
   printf("--------------------------------------------\n");
   printf("Choose one of the system Converter: ");
   scanf("%d", &user);
@@ -308,6 +310,8 @@ void menu() {
     OctaltoBinary();
   } else if (user == 10) {
     HexadecimaltoBinary();
+  } else if (user == 11) {
+    DecimaltoHexadecimal();
   }
 }
 
