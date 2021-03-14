@@ -256,7 +256,8 @@ int DecimaltoHexadecimal() {
 
   printf("Please enter a Decimal number: ");
   scanf("%d", &dec);
-
+  
+  // make a copy from the user input
   x = dec;
 
   while (dec != 0) {
