@@ -251,7 +251,33 @@ int HexadecimaltoBinary() {
 }
 
 int DecimaltoHexadecimal() {
+  int dec, rem, i = 0,x;
+  char hex[32];
 
+  printf("Please enter a Decimal number: ");
+  scanf("%d", &dec);
+
+  x = dec;
+
+  while (dec != 0) {
+    rem = dec % 16;
+    if (rem < 10) {
+      rem += 48;
+    } else {
+      rem += 55;
+    }
+    hex[i] = rem;
+    i++;
+    dec = dec / 16;
+  }
+
+  printf("%d in Decimal = ", x);
+  for (i=i-1; i >= 0; i--) {
+    printf("%c", hex[i]);
+  } 
+  printf(" in Hexadecimal \n");
+  secondmenu();
+  return 0;
 }
 
 // Function to navigate through the programm
